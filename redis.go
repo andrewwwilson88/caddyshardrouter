@@ -9,7 +9,7 @@ import (
 
 var ctx = context.Background()
 var rdb = redis.NewClient(&redis.Options{
-	Addr:     os.Getenv("REDIS_ADDR"),
-	Password: "",
+	Addr:     os.Getenv("REDIS_ADDRESS"),
+	Password: os.Getenv("REDIS_PASSWORD"),
 	DB:       0,
 })
