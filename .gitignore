@@ -13,3 +13,5 @@ codecov/
 # vendor/
 
 go.work.sum
+
+.idea
